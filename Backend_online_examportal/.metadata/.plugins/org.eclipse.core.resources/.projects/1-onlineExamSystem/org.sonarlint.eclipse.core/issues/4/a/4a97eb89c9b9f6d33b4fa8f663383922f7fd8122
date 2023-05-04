@@ -1,0 +1,5 @@
+
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ë¨²ÂùÿÿÿÿHåRMINORZ
+CODE_SMELL
+†squid:UselessImportCheck	"@Remove this unused import 'com.examportal.repo.AdminRepository'.(‡™–îûÿÿÿÿ8û’ê½ş0H„RMINORZ
+CODE_SMELL

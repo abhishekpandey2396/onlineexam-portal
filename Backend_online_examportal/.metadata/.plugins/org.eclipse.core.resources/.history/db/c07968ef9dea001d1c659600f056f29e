@@ -1,0 +1,22 @@
+package com.examportal.service.serviceImp;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.repo.AdminRepository;
+import com.example.service.AdminService;
+import com.examportal.model.Admin;
+
+@Service
+public class AdminServiceImpl implements AdminService {
+	
+	@Autowired
+	private AdminRepository adminRepository;
+
+	@Override
+	public Admin getAdmin(String name) {
+		// TODO Auto-generated method stub
+		return this.adminRepository.findByName(name);
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;1-onlineExamSystem&apos; to &apos;onlineExamSystem&apos;" description="Rename resource &apos;1-onlineExamSystem&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/1-onlineExamSystem" name="onlineExamSystem" stamp="1683219994147" updateReferences="true"/>
+</session>

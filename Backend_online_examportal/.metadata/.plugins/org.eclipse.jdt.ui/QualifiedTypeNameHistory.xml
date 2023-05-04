@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.example.model.Question"/>
+    <fullyQualifiedTypeName name="com.example.model.Result"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.example.model.User"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+    <fullyQualifiedTypeName name="com.example.repo.AdminRepository"/>
+    <fullyQualifiedTypeName name="com.example.service.AdminService"/>
+    <fullyQualifiedTypeName name="com.example.repo.UserRepository"/>
+    <fullyQualifiedTypeName name="com.example.service.UserService"/>
+    <fullyQualifiedTypeName name="com.example.repo.SubjectRepository"/>
+    <fullyQualifiedTypeName name="com.example.repo.QuestionRepository"/>
+    <fullyQualifiedTypeName name="com.example.repo.ExamRepository"/>
+    <fullyQualifiedTypeName name="com.example.service.ExamService"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.Option"/>
+    <fullyQualifiedTypeName name="com.example.service.serviceImp.ResultServiceImpl"/>
+    <fullyQualifiedTypeName name="com.example.repo.ResultRepository"/>
+    <fullyQualifiedTypeName name="com.example.service.QuestionService"/>
+    <fullyQualifiedTypeName name="com.example.service.ResultService"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaRepositories"/>
+    <fullyQualifiedTypeName name="com.example.service.SubjectService"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+</qualifiedTypeNameHistroy>

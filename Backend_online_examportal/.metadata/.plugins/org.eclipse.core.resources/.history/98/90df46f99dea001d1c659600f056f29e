@@ -1,0 +1,54 @@
+package com.examportal.service.serviceImp;
+
+import java.util.List;
+import java.util.Optional;
+
+import javax.swing.text.html.Option;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.repo.ExamRepository;
+import com.examportal.model.Exam;
+import com.examportal.service.ExamService;
+
+@Service
+public class ExamServiceImpl implements ExamService{
+
+	@Autowired
+	private ExamRepository examRepository;
+	
+    private Exam exam;
+	
+	@Override
+	public List<Exam> getAllExam() {
+		// TODO Auto-generated method stub
+		return (List<Exam>) this.examRepository.findAll();
+	}
+
+	@Override
+	public Exam getParticularExam(int id) {
+		// TODO Auto-generated method stub
+		Optional<Exam> optional = this.examRepository.findById(id);
+		if(optional.isPresent()) {
+		   exam = optional.get();
+		}else {
+			System.out.println("Exam not present with this examId");
+		}
+		return exam;
+		 
+	}
+
+	@Override
+	public Exam addNewExam(Exam exam) {
+		// TODO Auto-generated method stub
+		return this.examRepository.save(exam);
+	}
+
+	@Override
+	public void deletExam(int id) {
+		// TODO Auto-generated method stub
+		this.examRepository.deleteById(id);
+	}
+
+}

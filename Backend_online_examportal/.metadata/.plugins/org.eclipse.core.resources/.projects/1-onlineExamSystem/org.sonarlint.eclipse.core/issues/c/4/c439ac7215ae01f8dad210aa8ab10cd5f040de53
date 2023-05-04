@@ -1,0 +1,5 @@
+
+~squid:UselessImportCheck"=Remove this unused import 'com.example.repo.AdminRepository'.(éõ÷´8íå¡Ûí0HÑRMINORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ËªÎüÿÿÿÿHĞRMINORZ
+CODE_SMELL

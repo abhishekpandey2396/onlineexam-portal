@@ -1,0 +1,51 @@
+package com.examportal.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.examportal.model.Exam;
+import com.examportal.repo.ExamRepository;
+import com.examportal.service.ExamService;
+
+@RestController
+public class ExamController {
+	
+	@Autowired
+	private ExamService examService;
+	
+	
+   // to get all exam
+	@GetMapping("/exam")
+	public List<Exam> getExams(){
+		return this.examService.getAllExam();
+	}
+   
+   //to get details of a particular exam
+	@GetMapping("/exam/{id}")
+	public Exam getParticularExam(@PathVariable("id") int id){
+ 		 return this.examService.getParticularExam(id);
+	}
+
+    //to add a new exam
+	@PostMapping("/exam")
+	public Exam addNewExam(@RequestBody Exam exam ){
+		return this.examService.addNewExam(exam);
+	}
+	
+	
+	@DeleteMapping("/exam/{id}")
+	public void deleteExam(@PathVariable("id") int id ) {
+		this.examService.deletExam(id);
+	}
+	
+
+	
+}
